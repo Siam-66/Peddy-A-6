@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="!scroll-smooth" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-6</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .lato-af {
+        font-family: "Lato", sans-serif;
+        }
+        .color-1{
+            color: #0E7A81;
+        }
+        .color-2{
+            color: #131313B3 ;
+        }
+        .active{
+            background-color: #0E7A811A;
+            border: 1px solid #0E7A811A;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body class="lato-af " >
+    <header class="mb-5 container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100"> 
+                <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                    </div>
+                    <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a class="mr-3 hover:text-white hover:bg-[#0E7A81]">Home</a></li>
+                    <li><a class="mr-3 hover:text-white hover:bg-[#0E7A81]">Shop</a></li>
+                    <li><a class="mr-3 hover:text-white hover:bg-[#0E7A81]">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-2xl"> <img src="assets/logo.webp" alt=""> Peddy</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a class="mr-3 hover:text-white hover:bg-[#0E7A81]">Home</a></li>
+                    <li><a class="mr-3 hover:text-white hover:bg-[#0E7A81]">Shop</a></li>
+                    <li><a class="mr-3 hover:text-white hover:bg-[#0E7A81]">Contact</a></li>
+                </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="avatar placeholder">
+                        <div class=" border-gray-600 border w-10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                            
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section class="container mx-auto">
+        <div class="text-center flex-1 justify-center items-center ">
+                    <div class="flex justify-center items-center gap-3 mb-6">
+                    <p class="text-[#3f3e3eb3] text-xl font-bold">Bringing Families Together </p>
+        <img class="w-7" src="assets/love.png" alt="">
+        </div>
+        
+        <h1 class="md:text-6xl text-4xl font-bold mb-7 ">Your Path to Adoption <br> Starts Here</h1>
+        <p class="color-2">Your path to adoption begins with support, care, and guidance at every step. We're here to <br> help you create the family you've been dreaming of.</p>
+            
+            <div class="mt-5 hover:scale-125">
+                <a class="bg-[#0E7A81] text-white py-2 px-3   rounded-md" href="#categories">View More</a>
+            </div>
+            
+        
+        
+        <div class="flex justify-center items-center mt-5 ">
+            <img src="assets/pet.webp" alt="">
+        </div>
+        <div >
+            <h2 class="text-4xl font-bold mb-7">Adopt  Your  Best Friend</h2>
+            <p class="color-2">Adopt your best friend and bring home a lifetime of love and companionship. Start your journey <br> toward finding the perfect match today!</p>
+        </div>
+        </div>
+    </section>
+    <section class="container mx-auto max-sm:p-5 mt-10">
+
+        <div id="categories" class="flex justify-around mb-5">
+
+            <!-- <button class="flex justify-center items-center active text-xl font-bold md:py-4 md:px-10 p-4 rounded-full " >
+                <img class="md:w-10 w-7" src="https://cdn-icons-png.flaticon.com/512/8876/8876600.png" alt="">
+                <p>Dogs</p>
+            </button> -->
+
+        </div>
+
+        <div class="flex items-center justify-between">
+        <p class="text-xl font-bold">Best Deal For you </p>
+        <button id="sort-price-btn" onclick="sortByPrice()" class="bg-[#0E7A81] text-white py-2 px-3 mt-3 rounded-md hover:scale-125">Sort by Price</button>
+        </div>
+
+        <div class="mt-8 mb-10 md:flex justify-evenly gap-5 ">
+
+            <div id="pets" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-5  gap-5 " >
+
+                <!-- <div class="card bg-base-100 md:w-6/6 lg:w-5/6 shadow-md">
+                    <figure>
+                      <img
+                        src=" "
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Mister Tartosh</h2>
+                      <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                          </svg>
+                        <p>Breed: <samp></samp></p>
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                      </svg>
+                      <p>Birth: <samp></samp></p>
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                          </svg>
+                          <p>Gender <span></span></p>
+                          
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                          <p>Price: <samp></samp></p>
+                      </div>
+
+                      <div class="card-actions flex justify-around items-center mt-5">
+
+                        <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:size-9 size-6 rounded-md hover:text-white hover:bg-[#0E7A81]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                          </svg>
+                          </button>
+                        <button class="bg-white text-black hover:text-white hover:bg-[#0E7A81]  p-2  rounded-md">Adopt</button>
+                        <button class="bg-white text-black hover:text-white hover:bg-[#0E7A81] p-2 rounded-md">Details</button>
+                      </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div  class=" mx-auto border lg:w-3/12  md:w-5/12 border-gray-300 rounded-md p-5"> 
+            <div id="showImage" class="grid grid-cols-2 gap-2">
+
+            </div>
+            </div>
+
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer  justify-around bg-[#0f0f0f] text-white p-12">
+        <aside>
+            <div class="flex w-full">
+                <img class="w-14" src="assets/logo.webp" alt="">
+                <a class="btn btn-ghost text-4xl font-extrabold">Peddy</a>
+            </div>
+            <p class="py-4">
+                Location: got. Winterfell 6k, KL DG 63003
+                <br />
+                Phone: +618 594 725
+                <br>
+                Email: Peddy@gmail.com
+                <br>
+                Openings hours: 10.00 AM - 6.00 PM
+            </p>
+            <nav>
+                <div class="grid grid-flow-col gap-4">
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg>
+                    </a>
+
+                </div>
+            </nav>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Useful Links</h6>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Animals</a>
+            <a class="link link-hover">Foundations</a>
+            <a class="link link-hover">Contact</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Drop a Message</h6>
+            <fieldset class="form-control w-80">
+                <input type="text" placeholder="Enter your email" class="input input-bordered bg-gray-600 join-item" />
+                <button class="btn bg-primary text-white  border-none hover:text-black my-5 text-2xl join-item">Subscribe</button>
+            </fieldset>
+        </form>
+    </footer>
+
+    <!-- loading -->
+    <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.5); z-index:1000;"></div>
+<div id="loading" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); z-index:1001;">
+    <img src="assets/cat2.gif" alt="Loading...">
+</div>
+
+
+<!-- 1st modal -->
+    <dialog id="custommodal" class="modal">
+        <div class="modal-box">
+          <div id="modal-content">
+      
+          </div>
+          <div class="">
+            <form method="dialog" class="pt-4">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="w-full outline outline-1 text-2xl outline-[#0E7A81] text-[#0E7A81] text-center btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+<!-- 2nd modal -->
+
+<div id="adoptModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6   rounded-lg max-w-sm w-full relative">
+        <button class="absolute  top-2 right-2 text-gray-600 hover:text-black" onclick="closeModal()">&#x2715;</button>
+        <div class="flex-col justify-center items-center">
+        <div class="flex justify-center items-center">
+        <img src="https://img.icons8.com/?size=80&id=TGGyAyBJKGRc&format=png" alt="">
+        </div>
+        <div class="text-center">
+            <h4 class="text-xl font-semibold mb-4">Congrates</h4>
+            <p>Thank you for choosing to adopt!</p>
+        </div>
+        <div class="flex justify-center items-center">
+            <img class="w-28" src="assets/321.gif" alt="">
+        </div>
+        
+        </div>
+
+    </div>
+</div>
+
+    <script src="JS/peddy.js"></script>
+</body>
+</html>   
+
+
